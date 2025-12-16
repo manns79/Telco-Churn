@@ -1,25 +1,24 @@
+![CI](https://github.com/manns79/Telco-Churn/actions/workflows/ci.yml/badge.svg)
+
 # Telco-Churn
 
-# Table of Contents
-1. Project Overview
-2. Dataset
-3. Approach
-4. Results
-5. How to Run
-6. Repo Structure
-7. Notes on Responsible Use
+Predict customer churn using a reproducible scikit-learn pipeline with:
+- end-to-end preprocessing (ColumnTransformer + one-hot encoding)
+- probabilistic evaluation (ROC-AUC, PR-AUC, Brier score)
+- a simple cost-aware threshold recommendation
+- saved model artifact for batch scoring
+- unit tests + GitHub Actions CI
 
+## Quickstart
 
-## Project Overview
+```bash
+python -m venv .venv
+# Windows (cmd)
+.venv\Scripts\activate.bat
+# Windows (PowerShell)
+# .venv\Scripts\Activate.ps1
 
-## Dataset
+pip install -r requirements.txt
+pip install -e .
 
-## Approach
-
-## Results
-
-## How to Run
-
-## Repo Structure
-
-## Notes on Responsible Use
+python -m telco_churn.train --config configs/base.yaml
