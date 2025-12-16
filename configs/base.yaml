@@ -1,0 +1,16 @@
+data:
+  openml_id: 42178
+  target_col: Churn
+  drop_cols: [customerID]
+
+split:
+  test_size: 0.2
+  random_state: 42
+
+model:
+  name: logistic_regression   # options later: hist_gb
+  max_iter: 2000
+
+outputs:
+  artifacts_dir: artifacts
+  figures_dir: Assets/figures
