@@ -26,7 +26,7 @@ This repo focuses on:
 - Confusion matrix at an operating threshold
 - Cost-aware threshold recommendation (false positives vs false negatives)
 
-**Ops / Repro**
+**Engineering and Reproducibility**
 - Config-driven runs (`configs/*.yaml`)
 - Saves: model artifact, metrics JSON, figures PNGs
 - CLI entry points for training and batch scoring
