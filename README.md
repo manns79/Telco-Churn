@@ -22,3 +22,11 @@ pip install -r requirements.txt
 pip install -e .
 
 python -m telco_churn.train --config configs/base.yaml
+
+
+### ROC curve
+![ROC curve](Assets/figures/roc_curve.png)
+
+### Calibration curve
+![Calibration curve](Assets/figures/calibration_curve.png)
+
