@@ -64,3 +64,18 @@ mkdir -p data/raw
 # 3) Train + evaluate
 python -m telco_churn.train --config configs/base.yaml
 ```
+
+## Example results
+
+From one run using a **stratified 80/20 train/test split**:
+
+- **ROC-AUC:** 0.8427  
+- **PR-AUC:** 0.6381  
+- **Brier score:** 0.1683  
+- **Cost-aware threshold suggestion:** 0.15 *(example setting)*
+
+### ROC curve
+![ROC curve](Assets/figures/roc_curve.png)
+
+### Calibration curve
+![Calibration curve](Assets/figures/calibration_curve.png)
